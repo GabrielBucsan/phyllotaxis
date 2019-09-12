@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phyllotaxis</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script src="utils/mathUtils.js"></script>
+    <script src="objects/point.js"></script>
+    <script src="main.js"></script>
+    <script src="canvas.js"></script>
+</head>
+<body>
+    <div class="row">
+        <canvas></canvas>
+        <div class="column width-300px padding-10px">
+            <span>Number of Points</span>
+            <form oninput="pointsRangeOut.value = pointsRange.valueAsNumber" class='row'>
+                <input type="range" name="pointsRange" id="pointsRange" min="10" max="3000" value="100" class='fill-width'>
+                <output name="pointsRangeOut" for="pointsRange">100</output>
+            </form>
+            <span>Coeficient</span>
+            <form oninput="coeficientRangeOut.value = coeficientRange.valueAsNumber" class='row'>
+                <input type="range" name="coeficientRange" id="coeficientRange" min="2" max="20" value="4" class='fill-width'>
+                <output name="coeficientRangeOut" for="coeficientRange">4</output>
+            </form>
+            <span>Point Radius</span>
+            <form oninput="pointRadiusRangeOut.value = pointRadiusRange.valueAsNumber" class='row'>
+                <input type="range" name="pointRadiusRange" id="pointRadiusRange" min="1" max="5" value="2" class='fill-width'>
+                <output name="pointRadiusRangeOut" for="pointRadiusRange">2</output>
+            </form>
+            <span>Angle</span>
+            <form oninput="angleRangeOut.value = angleRange.valueAsNumber" class='row'>
+                <input type="range" name="angleRange" id="angleRange" min="135" max="140" value="137.5" class='fill-width' step='0.1'>
+                <output name="angleRangeOut" for="angleRange">137.5</output>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
