@@ -14,8 +14,8 @@ class Canvas{
         }
 
         this.size = new Vector(this.canvas.width, this.canvas.height);
-        this.context = this.canvas.getContext('2d', { alpha: false });
-        this.color = 'black';
+        this.context = this.canvas.getContext('2d');
+        this.color = '#323232';
     }
 
     update(){

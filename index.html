@@ -18,13 +18,13 @@
         <div class="column width-300px padding-10px">
             <span>Number of Points</span>
             <form oninput="pointsRangeOut.value = pointsRange.valueAsNumber" class='row'>
-                <input type="range" name="pointsRange" id="pointsRange" min="10" max="3000" value="100" class='fill-width'>
-                <output name="pointsRangeOut" for="pointsRange">100</output>
+                <input type="range" name="pointsRange" id="pointsRange" min="10" max="3000" value="1000" class='fill-width'>
+                <output name="pointsRangeOut" for="pointsRange">1000</output>
             </form>
             <span>Coeficient</span>
             <form oninput="coeficientRangeOut.value = coeficientRange.valueAsNumber" class='row'>
-                <input type="range" name="coeficientRange" id="coeficientRange" min="2" max="20" value="4" class='fill-width'>
-                <output name="coeficientRangeOut" for="coeficientRange">4</output>
+                <input type="range" name="coeficientRange" id="coeficientRange" min="2" max="20" value="5" class='fill-width'>
+                <output name="coeficientRangeOut" for="coeficientRange">5</output>
             </form>
             <span>Point Radius</span>
             <form oninput="pointRadiusRangeOut.value = pointRadiusRange.valueAsNumber" class='row'>
@@ -36,6 +36,13 @@
                 <input type="range" name="angleRange" id="angleRange" min="135" max="140" value="137.5" class='fill-width' step='0.1'>
                 <output name="angleRangeOut" for="angleRange">137.5</output>
             </form>
+            <span>Color every X point</span>
+            <form oninput="colorPointRangeOut.value = colorPointRange.valueAsNumber" class='row'>
+                <input type="range" name="colorPointRange" id="colorPointRange" min="1" max="100" value="13" class='fill-width'>
+                <output name="colorPointRangeOut" for="colorPointRange">13</output>
+            </form>
+            <span>Point Color</span>
+            <input type="color" name="pointsColor" id="pointsColor" value="#ffff00">
         </div>
     </div>
 </body>
