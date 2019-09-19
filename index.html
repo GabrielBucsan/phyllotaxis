@@ -42,7 +42,12 @@
                 <output name="colorPointRangeOut" for="colorPointRange">13</output>
             </form>
             <span>Point Color</span>
-            <input type="color" name="pointsColor" id="pointsColor" value="#ffff00">
+            <input type="color" name="pointsColor" id="pointsColor" value="#ffff00" class='fill-width'>
+            <span>Color offset</span>
+            <form oninput="colorOffsetRangeOut.value = colorOffsetRange.valueAsNumber" class='row'>
+                <input type="range" name="colorOffsetRange" id="colorOffsetRange" min="0" max="100" value="0" class='fill-width'>
+                <output name="colorOffsetRangeOut" for="colorOffsetRange">0</output>
+            </form>
         </div>
     </div>
 </body>
