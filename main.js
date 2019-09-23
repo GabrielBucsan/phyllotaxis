@@ -1,6 +1,6 @@
 $(document).ready(()=>{
 
-    const canvas = new Canvas(600, 600);
+    const canvas = new Canvas(510, 510);
     const c = canvas.context;
     const pointsSlider = $('#pointsRange');
     const coeficientSlider = $('#coeficientRange');
